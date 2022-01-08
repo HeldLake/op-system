@@ -1,28 +1,84 @@
-  using System;
-    using System.Threading;
-   
-   
-public class HelloWorld
+using System;
+using System.Threading;
+					
+public class Program
 {
-    static void Login()
+
+        static void Login()
     {
-        string password = "lul";
+        string password = "0";
         Console.Write("enter your password:");
         string passwordtry = Console.ReadLine();
-        if (passwordtry = password){
-  Console.WriteLine("succes");
+        Thread.Sleep(1000);
+        if (passwordtry == password){
+  			Console.Clear();
+			Console.WriteLine("accsess granted");
+			Thread.Sleep(1000);
+			Console.Clear();
+			Terminal();
+			
 }
 else
 {
-  Console.WriteLine("not");
-  Main();
+  	Console.Clear();
+  	Main();
 }
-       
-        Thread.Sleep(10000);
-    }
-    public static void Main(string[] args)
-    {
-        Login();
-        Console.WriteLine ("");
-    }
+		}
+
+	public static void Main()
+	{
+		Login();
+		Console.WriteLine("");
+	}
+	
+	static void Terminal()
+	{
+		string user ="heldlake";
+		string credit ="credit";
+		string animationtest1 ="sudo_animationtest1";
+		
+		Console.Write(user + "@os:-$ ");
+		string input = Console.ReadLine();
+		        if (input == credit){
+  			Console.Clear();
+			Console.WriteLine("Levente Rozina");
+			Thread.Sleep(1000);
+			Terminal();
+}
+
+		else if(input == animationtest1){
+			animation();
+		}
+		else
+		{
+  			Terminal();
+		}
+	}
+	
+	static void animation()
+	{
+		Console.Clear();
+            Console.WriteLine("[......]");
+            System.Threading.Thread.Sleep(1000);
+            Console.Clear();
+            Console.WriteLine("[#.....]");
+            System.Threading.Thread.Sleep(1000);
+            Console.Clear();
+            Console.WriteLine("[##....]");
+            System.Threading.Thread.Sleep(1000);
+            Console.Clear();
+            Console.WriteLine("[###...]");
+            System.Threading.Thread.Sleep(1000);
+            Console.Clear();
+            Console.WriteLine("[####..]");
+            System.Threading.Thread.Sleep(1000);
+            Console.Clear();
+            Console.WriteLine("[#####.]");
+            System.Threading.Thread.Sleep(1000);
+            Console.Clear();
+            Console.WriteLine("[######]");
+            System.Threading.Thread.Sleep(1000);
+            Console.Clear();
+			Terminal();
+	}
 }
