@@ -1,0 +1,28 @@
+  using System;
+    using System.Threading;
+   
+   
+public class HelloWorld
+{
+    static void Login()
+    {
+        string password = "lul";
+        Console.Write("enter your password:");
+        string passwordtry = Console.ReadLine();
+        if (passwordtry = password){
+  Console.WriteLine("succes");
+}
+else
+{
+  Console.WriteLine("not");
+  Main();
+}
+       
+        Thread.Sleep(10000);
+    }
+    public static void Main(string[] args)
+    {
+        Login();
+        Console.WriteLine ("");
+    }
+}
