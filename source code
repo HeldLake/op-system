@@ -1,11 +1,7 @@
 using System;
 using System.Threading;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-					
+
 public class Program
 {
 
@@ -32,7 +28,7 @@ else
 
 	public static void Main()
 	{
-		Terminal();
+		//Terminal();
 		Login();
 		Console.WriteLine("");
 	}
@@ -42,12 +38,13 @@ else
 		string user ="heldlake";
 		string credit ="credit";
 		string calculator = "calculator";
+		string clear ="clear";
 		string animationtest1 ="sudo_animationtest1";
 		
 		Console.Write(user + "@os:-$ ");
 		string input = Console.ReadLine();
 		        if (input == credit){
-  			Console.Clear();
+  			//Console.Clear();
 			Console.WriteLine("Levente Rozina");
 			Thread.Sleep(1000);
 			Terminal();
@@ -59,9 +56,13 @@ else
 		else if(input == calculator){
 		calc();
 		}
+		else if(input == clear){
+		Clear();
+		}
 		else
 		{
-  			Terminal();
+  			Console.WriteLine("unknown command: " + input);
+			Terminal();
 		}
 	}
 	
@@ -73,16 +74,16 @@ else
 		string multi ="x";
 		string divide ="/";
 		
-		Console.Clear();
+		//Console.Clear();
 		Console.Write("enter your first number: ");			//double ageinput = Convert.ToDouble(Console.ReadLine());
 		double firstnum = Convert.ToDouble(Console.ReadLine());
-		Console.Clear();
+		//Console.Clear();
 		Console.Write("enter your second number: ");
 		double secondnum = Convert.ToDouble(Console.ReadLine());
-		Console.Clear();
+		//Console.Clear();
 		Console.WriteLine("select operator: (+,-,x,/)");
 		string input = Console.ReadLine();
-		Console.Clear();
+		//Console.Clear();
 		if(input == plus){
 		Console.WriteLine(firstnum + secondnum);
 			Terminal();
@@ -101,6 +102,13 @@ else
 		}
 		
 	}
+	
+	static void Clear()
+	{
+		Console.Clear();
+		Terminal();
+	}
+	
 	static void animation()
 	{
 		Console.Clear();
