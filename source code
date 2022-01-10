@@ -23,13 +23,33 @@ public class Program
 }
 else
 {
-  	Console.Clear();
-  	Main();
+  	string yes ="y";
+	string no ="n";
+	string yess ="Y";
+	string noo ="N";
+	
+	Console.WriteLine("back to Terminal: y/n ");
+	string input = Console.ReadLine();
+	if(input == yes){
+	Terminal();
+	}
+	else if(input == yess){
+	Terminal();
+	}
+	else if(input == no){
+	sudoLogin();
+	}
+	else if(input == noo){
+	sudoLogin();
+	}
+
 }
-		}
+
+}
 
 	public static void Main()
 	{
+		Console.WriteLine("for commands type !help");
 		Terminal();
 		//Login();
 		Console.WriteLine("");
@@ -43,6 +63,7 @@ else
 		string clear ="clear";
 		string sudo ="sudo";
 		string cmdhelp ="!help";
+		string support ="!support";
 		
 		Console.Write(user + "@os:-$ ");
 		string input = Console.ReadLine();
@@ -64,6 +85,9 @@ else
 		}
 		else if(input == cmdhelp){
 		cmdHelp();
+		}
+		else if(input == support){
+		Supp0rt();
 		}
 		else
 		{
@@ -153,12 +177,14 @@ else
 		string clear ="clear";
 		string sudo ="sudo";
 		string cmdhelp ="!help";
+		string support ="!support";
 		
 		Console.WriteLine("	display commands: " + cmdhelp);
 		Console.WriteLine("	start calculator: " + calculator);
 		Console.WriteLine("	clear the command line: " + clear);
 		Console.WriteLine("	display developer: " + credit);
 		Console.WriteLine("	get super user: " + sudo);
+		Console.WriteLine("	GitHub/support page: " + support);
 		Terminal();
 	}
 	
@@ -174,6 +200,11 @@ else
 		Console.WriteLine("	clear the command line: " + clear);
 		Console.WriteLine("	get back to normal Terminal: " + backtoTerminal);
 		sudoTerminal();
+	}
+	static void Supp0rt()
+	{
+	Console.WriteLine("https://github.com/HeldLake/op-system");
+		Terminal();
 	}
 	static void animation1()
 	{
