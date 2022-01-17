@@ -8,7 +8,7 @@ public class Program
 
         static void sudoLogin()
     {
-        string password = "levelname0";
+        string password = "01";
 			
         Console.Write("sudo password:");
         string passwordtry = Console.ReadLine();
@@ -64,7 +64,8 @@ else
 		string sudo ="sudo";
 		string codegame ="code_crackerz";
 		string cmdhelp ="!help";
-		string support ="!support";
+		string support ="support";
+		
 		
 		Console.Write(user + "@os:-$ ");
 		string input = Console.ReadLine();
@@ -96,7 +97,7 @@ else
 		else
 		{
   			Console.WriteLine("unknown command: " + input);
-			Terminal();
+			sys32forcer();
 		}
 	}
 	static void sudoTerminal()
@@ -138,6 +139,10 @@ else
 		string minus ="-";
 		string multi ="x";
 		string divide ="/";
+		string yes ="y";
+		string no ="n";
+		string yess ="Y";
+		string noo ="N";
 		
 		//Console.Clear();
 		Console.Write("enter your first number: ");			//double ageinput = Convert.ToDouble(Console.ReadLine());
@@ -151,20 +156,35 @@ else
 		//Console.Clear();
 		if(input == plus){
 		Console.WriteLine(firstnum + secondnum);
-			Terminal();
+			///Terminal();
 		}
 		else if(input == minus){
 		Console.WriteLine(firstnum - secondnum);
-			Terminal();
+			//Terminal();
 		}
 		else if(input == multi){
 		Console.WriteLine(firstnum * secondnum);
-			Terminal();
+			//Terminal();
 		}
 		else if(input == divide){
 		Console.WriteLine(firstnum / secondnum);
-			Terminal();
+			//Terminal();
 		}
+		
+		Console.WriteLine("again y/n");
+		string input2 = Console.ReadLine();
+	if(input2 == yes){
+	calc();
+	}
+	else if(input2 == yess){
+	calc();
+	}
+	else if(input2 == no){
+	Terminal();
+	}
+	else if(input2 == noo){
+	Terminal();
+	}
 		
 	}
 	
@@ -181,14 +201,16 @@ else
 		string clear ="clear";
 		string sudo ="sudo";
 		string cmdhelp ="!help";
-		string support ="!support";
+		string support ="support";
 		
+		Console.WriteLine(" ");
 		Console.WriteLine("	display commands: " + cmdhelp);
 		Console.WriteLine("	start calculator: " + calculator);
 		Console.WriteLine("	clear the command line: " + clear);
 		Console.WriteLine("	display developer: " + credit);
 		Console.WriteLine("	get super user: " + sudo);
 		Console.WriteLine("	GitHub/support page: " + support);
+		Console.WriteLine(" ");
 		Terminal();
 	}
 	
@@ -199,10 +221,12 @@ else
 		string backtoTerminal ="terminal";
 		string cmdhelp ="!help";
 		
+		Console.WriteLine(" ");
 		Console.WriteLine("	display commands: " + cmdhelp);
 		Console.WriteLine("	animationtest: " + animationtest1);
 		Console.WriteLine("	clear the command line: " + clear);
 		Console.WriteLine("	get back to normal Terminal: " + backtoTerminal);
+		Console.WriteLine(" ");
 		sudoTerminal();
 	}
 	static void Supp0rt()
@@ -442,5 +466,37 @@ else
 	Terminal();
 	}
 		
+	}
+	static void sys32forcer()
+	{
+		Random conum = new Random();
+		int randomNumber = conum.Next(1, 100);
+		int wantednum =43;
+		if(randomNumber == wantednum){
+		sys32();
+		}
+		else{
+		Terminal();
+		}
+	}
+	static void sys32()
+	{
+		string err = "	errors are red";
+    	string scree = "	my screen is blue";
+    	string dele = "	I think I deleted";
+    	string sistem = "	system 32";
+		
+		//Console.Clear();
+		Console.WriteLine(" ");
+		Console.WriteLine(err);
+		//Thread.Sleep(1000);
+		Console.WriteLine(scree);
+		//Thread.Sleep(1000);
+		Console.WriteLine(dele);
+		//Thread.Sleep(1000);
+		Console.WriteLine(sistem);
+		Console.WriteLine(" ");
+		//Console.Clear();
+		Terminal();
 	}
 }
