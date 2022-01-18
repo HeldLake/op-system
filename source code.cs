@@ -564,12 +564,24 @@ else
 		int randomNumber = conum.Next(1, 100);
 		int wantednum =43;
 		if(randomNumber == wantednum){
-		sys32();
+		sys32headline();
 		}
 		else{
 		Terminal();
 		}
 	}
+	static void sys32headline()
+	{
+		Console.WriteLine(" ");
+		Console.WriteLine("███████╗██╗   ██╗███████╗████████╗███████╗███╗   ███╗    ██████╗ ██████╗ ");
+		Console.WriteLine("██╔════╝╚██╗ ██╔╝██╔════╝╚══██╔══╝██╔════╝████╗ ████║    ╚════██╗╚════██╗");
+		Console.WriteLine("███████╗ ╚████╔╝ ███████╗   ██║   █████╗  ██╔████╔██║     █████╔╝ █████╔╝");
+		Console.WriteLine("╚════██║  ╚██╔╝  ╚════██║   ██║   ██╔══╝  ██║╚██╔╝██║     ╚═══██╗██╔═══╝ ");
+		Console.WriteLine("███████║   ██║   ███████║   ██║   ███████╗██║ ╚═╝ ██║    ██████╔╝███████╗");
+		Console.WriteLine("╚══════╝   ╚═╝   ╚══════╝   ╚═╝   ╚══════╝╚═╝     ╚═╝    ╚═════╝ ╚══════╝");
+		sys32();
+	}
+
 	static void sys32()
 	{
 		string err = "	errors are red";
