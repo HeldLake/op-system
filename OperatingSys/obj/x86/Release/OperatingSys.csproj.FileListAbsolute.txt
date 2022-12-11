@@ -1,0 +1,3 @@
+/home/heldlake/Projects/OperatingSys/OperatingSys/bin/Release/OperatingSys.exe
+/home/heldlake/Projects/OperatingSys/OperatingSys/obj/x86/Release/OperatingSys.csproj.CoreCompileInputs.cache
+/home/heldlake/Projects/OperatingSys/OperatingSys/obj/x86/Release/OperatingSys.exe

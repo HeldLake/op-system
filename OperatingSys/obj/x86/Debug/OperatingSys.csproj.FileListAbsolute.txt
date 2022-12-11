@@ -1,0 +1,6 @@
+/home/heldlake/Projects/OperatingSys/OperatingSys/bin/Debug/OperatingSys.exe
+/home/heldlake/Projects/OperatingSys/OperatingSys/bin/Debug/OperatingSys.pdb
+/home/heldlake/Projects/OperatingSys/OperatingSys/obj/x86/Debug/OperatingSys.csproj.AssemblyReference.cache
+/home/heldlake/Projects/OperatingSys/OperatingSys/obj/x86/Debug/OperatingSys.csproj.CoreCompileInputs.cache
+/home/heldlake/Projects/OperatingSys/OperatingSys/obj/x86/Debug/OperatingSys.exe
+/home/heldlake/Projects/OperatingSys/OperatingSys/obj/x86/Debug/OperatingSys.pdb
